@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Leaf Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div id="chart-area"></div>
+        </div>
+
+        <div class="row" id="controls-row">
+            <div class="col-xs-2 col-sm-2">
+                <button id="play-button" class="btn btn-primary btn-block">
+                    &#9654; Play
+                </button>
+            </div>
+
+            <div class="col-xs-2 col-sm-2">
+                <button id="reset-button" class="btn btn-default btn-block">
+                    &#8635; Reset
+                </button>
+            </div>
+
+            <div class="col-xs-3 col-sm-3">
+                <select id="continent-select" class="form-control">
+                    <option selected value="all">All Continents</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+
+            <div class="col-xs-5 col-sm-5">
+                <div id="slider-div">
+                    <label>Year: <span id="year">1800</span></label>
+                    <div id="date-slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
